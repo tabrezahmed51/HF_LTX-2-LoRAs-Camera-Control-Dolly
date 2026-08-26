@@ -1,0 +1,10 @@
+LTX-2 STUDIO — Handoff bundle
+==============================
+README.md              Full handoff doc (GitHub+HF compatible)
+assets/                Animated neon banner + 4 nav-screen SVGs
+ltx2_telegram_bot.py   Telegram remote (run: python ltx2_telegram_bot.py)
+space-requirements.txt HF Space Python deps
+space-packages.txt     HF Space system deps (ffmpeg)
+
+Secrets: export TG_BOT_TOKEN / HF_TOKEN / TG_CHANNEL_ID before running.
+First /start on the bot claims 👑 ownership.

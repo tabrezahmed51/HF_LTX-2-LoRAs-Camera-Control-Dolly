@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" font-family="Inter,Segoe UI,Arial,sans-serif">
+  <defs>
+    <linearGradient id="neonText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#EC4899;#22D3EE;#7C3AED" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#EC4899">
+        <animate attributeName="stop-color" values="#EC4899;#22D3EE;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#7C3AED;#EC4899;#22D3EE" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="nebula1" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.28">
+        <animate attributeName="stop-opacity" values="0.28;0.45;0.28" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#05070F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebula2" cx="82%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.22">
+        <animate attributeName="stop-opacity" values="0.22;0.4;0.22" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#05070F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scanline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- deep space background -->
+  <rect width="1200" height="320" fill="#05070F"/>
+  <rect width="1200" height="320" fill="url(#nebula1)"/>
+  <rect width="1200" height="320" fill="url(#nebula2)"/>
+
+  <!-- twinkling starfield -->
+  <g fill="#E2E8F0">
+    <circle cx="80" cy="48" r="1.6"><animate attributeName="opacity" values="0.15;1;0.15" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="210" cy="90" r="1.1"><animate attributeName="opacity" values="1;0.1;1" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="340" cy="35" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="470" cy="110" r="1"><animate attributeName="opacity" values="0.9;0.15;0.9" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="610" cy="42" r="1.5"><animate attributeName="opacity" values="0.25;1;0.25" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="730" cy="95" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="865" cy="38" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="985" cy="105" r="1.1"><animate attributeName="opacity" values="0.85;0.15;0.85" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1110" cy="52" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="150" cy="255" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="3.3s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="275" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="262" r="1.1"><animate attributeName="opacity" values="0.9;0.1;0.9" dur="3.7s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="278" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="1150" cy="240" r="1.2"><animate attributeName="opacity" values="1;0.15;1" dur="3.2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- orbit ring accent -->
+  <ellipse cx="600" cy="160" rx="430" ry="120" fill="none" stroke="#6366F1" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="6 14">
+    <animate attributeName="stroke-dashoffset" values="0;200" dur="12s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- main title (glow pulse) -->
+  <g filter="url(#glow)">
+    <text x="600" y="150" text-anchor="middle" font-size="86" font-weight="800"
+          fill="url(#neonText)" letter-spacing="4">LTX-2 STUDIO</text>
+    <animate attributeName="opacity" values="0.92;1;0.92" dur="2.4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- subtitle (cool color) -->
+  <text x="600" y="196" text-anchor="middle" font-size="24" fill="#67E8F9" letter-spacing="6">
+    IMAGE → CINEMATIC VIDEO · IDENTITY-LOCK · ZERO GPU
+  </text>
+
+  <!-- tag chips -->
+  <g font-size="17" text-anchor="middle">
+    <rect x="330" y="228" width="128" height="34" rx="17" fill="#131C31" stroke="#7C3AED"/>
+    <text x="394" y="250" fill="#C4B5FD">RIFE 2×</text>
+    <rect x="474" y="228" width="140" height="34" rx="17" fill="#131C31" stroke="#EC4899"/>
+    <text x="544" y="250" fill="#F9A8D4">Real-ESRGAN</text>
+    <rect x="630" y="228" width="118" height="34" rx="17" fill="#131C31" stroke="#22D3EE"/>
+    <text x="689" y="250" fill="#A5F3FC">MMS-TTS</text>
+    <rect x="764" y="228" width="106" height="34" rx="17" fill="#131C31" stroke="#6366F1"/>
+    <text x="817" y="250" fill="#C7D2FE">IC-LoRA</text>
+  </g>
+
+  <!-- scanning underline -->
+  <rect x="200" y="286" width="800" height="3" fill="url(#scanline)">
+    <animate attributeName="x" values="-400;800;-400" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

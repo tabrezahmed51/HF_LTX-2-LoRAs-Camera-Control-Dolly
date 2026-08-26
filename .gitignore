@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.log
+.ltx2_admins.json
+.ltx2_bot_settings.json
+.env
