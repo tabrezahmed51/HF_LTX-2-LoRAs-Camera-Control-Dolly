@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    ignore:
+      - dependency-name: "transformers"   # v5 compat sprint pending (ltx pinned to 4.x API)
+      - dependency-name: "diffusers"      # unused post Real-ESRGAN pivot
