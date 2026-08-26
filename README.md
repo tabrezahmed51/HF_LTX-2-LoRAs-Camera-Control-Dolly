@@ -1,16 +1,3 @@
----
-title: LTX-2-LoRAs-Camera-Control-Dolly
-emoji: 📹
-colorFrom: purple
-colorTo: purple
-sdk: gradio
-sdk_version: 6.9.0
-app_file: app.py
-pinned: true
-license: apache-2.0
-short_description: Cinematic I2V studio with identity-lock + post FX, IC-LoRA
----
-
 <div align="center">
 
 <img src="assets/banner.svg" width="100%" alt="LTX-2 STUDIO banner"/>
