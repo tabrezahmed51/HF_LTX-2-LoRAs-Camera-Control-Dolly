@@ -1,7 +1,7 @@
 einops
 numpy
 torchaudio==2.11.0
-transformers==4.57.6
+transformers==5.10.1
 safetensors
 accelerate
 flashpack==0.1.2
